@@ -1,6 +1,5 @@
 import uuid from "react-uuid";
 import { Types } from "../Constants/ActionTypes";
-import { getTodoItemType } from "../utils/helper";
 
 
 const initialState = {"alltodo": [],"priorities": {
@@ -31,7 +30,7 @@ export const TodoReducer = (state=initialState,action) => {
             let editTodoObject = action.payload.payloadObject;
             let TodoArray = state[todoItemType];
             
-            TodoArray.map((todoItem) => {
+            TodoArray.forEach(todoItem => {
                 if(id === todoItem.id){
                     todoItem.task = editTodoObject.task;
                     todoItem.timestamp = editTodoObject.timestamp;
@@ -46,12 +45,12 @@ export const TodoReducer = (state=initialState,action) => {
         case Types.DELETETODO:
             const idToBeDeleted = action.payload.id;
             const todoType = action.payload.todoItemType;
-            let todoArray = state[todoType];
-            todoArray = todoArray.filter(todoItem => todoItem.id !== idToBeDeleted)
+            const todoArray = state[todoType];
+            const newTodoArray = todoArray.filter(todoItem => todoItem.id !== idToBeDeleted)
 
             return {
                 ...state,
-                [todoType]: todoArray
+                [todoType]: newTodoArray
             }
         default: return state;
     }

@@ -50,11 +50,14 @@ export default function TodoList(){
                     else if(todoItem.task.toLowerCase().includes(searchTerm)){
                         return todoItem;
                     }
+                    else{
+                        return false;
+                    }
                 }).map((todoItem) => (
                     <ErrorBoundary key={todoItem.id}>
                         <TodoItem key={todoItem.id} todoItem={todoItem} todoItemType={"alltodo"} />
                     </ErrorBoundary>
-                ))
+                ));
             }
         }
     }
