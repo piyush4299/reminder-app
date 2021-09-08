@@ -1,0 +1,15 @@
+.header{
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #E5E7EB;
+}
+
+.heading{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.subheading{
+    font-size: 0.9rem;
+    font-weight: lighter;
+}

@@ -1,0 +1,37 @@
+.addTodoSection{
+    padding: 3rem 0rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.takeTodo{
+    padding: 0.7rem;
+    margin: 0.3rem 0.3rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.timeLimit{
+    padding: 0.7rem;
+    margin: 0.3rem 0.3rem;
+    outline: none;
+    border: none;
+    border: 1px solid gray;
+}
+
+.addTodoItem{
+    padding: 0.7rem;
+    margin: 0.3rem 0.3rem;
+    outline: none;
+    border: none;
+}
+
+.priority{
+    padding: 0.7rem;
+    margin: 0.3rem 0.3rem;
+    outline: none;
+    
+}

@@ -1,0 +1,56 @@
+.TodoList{
+    padding: 0.5rem 1rem;
+}
+
+.Navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.3rem;
+}
+
+.Navigation > .navbar{
+    width: 100%;
+    padding: 0.7rem;
+    outline: none;
+    border: none;
+    font-size: 0.9rem;
+}
+
+.searchBar{
+    width: 40%;
+    padding: 0.7rem;
+    margin: 0.3rem 3rem 0rem 0.3rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.filters{
+    text-align: center;
+}
+
+.filterForm{
+    margin: auto;
+}
+
+.filterWay{
+    padding: 0.7rem;
+    margin: 0.3rem 0.3rem;
+    outline: none;
+    border: none;
+}
+
+.OrderBy{
+    padding: 0.7rem;
+    margin: 0.3rem 0.3rem;
+    outline: none;
+    border: none;
+}
+
+.applyFilters{
+    padding: 0.7rem;
+    margin: 0.3rem 0.3rem;
+    outline: none;
+    border: none;
+}

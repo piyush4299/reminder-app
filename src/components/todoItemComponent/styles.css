@@ -1,0 +1,73 @@
+.todoItemCard{
+    padding: 0.5rem;
+}
+
+.todoItemSection{
+    background-color:#E5E7EB;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todoDetail{
+    padding: 0.5rem;
+    width: 45%;
+}
+
+.todoItemHeader{
+    font-size: 1.3rem;
+    padding: 0rem 0.4rem;
+}
+
+.todoItemTimestamp{
+    padding: 0.4rem;
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.inlineIcons{
+    padding: 1rem;
+}
+
+.delete{
+    padding: 0rem 1rem;
+    font-size: 1rem;
+}
+
+.edit{
+    padding: 0rem 0.5rem;
+    font-size: 1rem;
+}
+
+.todoEditDetail{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+}
+
+.editText{
+    padding: 0.3rem;
+    margin: 0.4rem;
+    outline: none;
+    border: none;
+    text-align: center;
+    border-bottom: 1px solid gray;
+}
+
+.editTimeStamp{
+    padding: 0.3rem;
+    margin: 0.4rem;
+    outline: none;
+}
+
+.save{
+    padding: 0rem 0.5rem;
+    font-size: 1rem;   
+}
+
+.cancel{
+    padding: 0rem 1rem;
+    font-size: 1rem;
+}
